@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>about</title>
+        <!-- global styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <!--    local styles-->
+    <link rel="stylesheet" href="css/aboutnew.css" type="text/css">
+    <link rel="stylesheet" href="css/ExternalStyleSheet.css" type="text/css">
+    <!--    local js-->
+     <script src="javascript/about.js"></script>
+    
+     <script>
+
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    
+    </head>
+
+<body>
+    
+    <div class="main">
+        <nav>
+            <img class="mainlogo" src="images/logo4.jpeg" alt="wealthwave" style="width:100px;height:100px;">
+
+            <ul>
+                <li><a href="home.html" class="active">HOME</a></li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>                         
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>  
+            </ul>
+            
+        </nav>
+        
+
+        <div class="main">
+        <div class="header">
+            <a href="#meet-the-team"><img src="images/down-arrow.png" alt=down""></a>
+            <text id="meet-the-team">Meet The Team</text>
+        </div>
+        <div id="middle-text">
+            <text>
+                <h1 id="line-one">Mission</h1>
+                <p id="line-two">To empower financial confidence, WealthWave is dedicated to providing a unique and personalized journey in managing your wealth. We offer intuitive tools and insights, ensuring the latest financial trends are accessible to everyone. Our commitment is to create an environment where users feel confident and empowered, shaping their financial style and achieving lasting prosperity.</p>
+            </text>
+        </div>
+
+    </div>
+        <div class="before-images">
+        <text>Our Team</text>
+        </div>
+<!--    group-images-->
+
+    <div class="container">
+    <div class="box">
+        <div class="box-row">
+            <div class="box-cell box1 hover-wrapper-1"
+                  onmouseover="changeColor01('rgb(32, 24, 11)');showText01('Binura Senevirathna')"
+                 onmouseout="changeColor01('white');hideText01()">
+                <img src="images/binura.jpeg" alt="binura" class="image-hover1">
+               
+            </div>
+            <div class="box-cell box2 hover-wrapper-2"
+                 onmouseover="changeColor02('rgb(32, 24, 11)');showText02('Asini Perera')"
+                 onmouseout="changeColor02('white');hideText02()">
+                <img src="images/asini.png" alt="asini" class="image-hover2">
+                 
+            </div>
+            
+        </div>
+
+    </div>
+
+    </div>
+    <div class="container-1">
+        <div class="box">
+            <div class="box-row">
+                <div class="box-cell box1" id="hover-show1">
+
+                </div>
+                <div class="box-cell box2" id="hover-show2">
+
+                </div>
+               
+            </div>
+
+        </div>
+
+    </div>
+    
+  
+</div> 
+</div>
+
+
+  <script>
+    window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    const navHeight = nav.offsetHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > navHeight) {
+        nav.classList.add('scrolled', 'nav-background');
+    } else {
+        nav.classList.remove('scrolled', 'nav-background');
+    }
+  });
+  </script>
+</body>
+
+
+</html>

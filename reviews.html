@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>reviews</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+        
+        <!-- global styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <!--    local styles-->
+    <link rel="stylesheet" href="css/reviwes.css" type="text/css">
+    <link rel="stylesheet" href="css/ExternalStyleSheet.css" type="text/css">
+    <!--    local js-->
+     <script src="javascript/reviwes.js"></script>
+    
+     <script>
+
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    
+    </head>
+
+<body>
+    
+    <div class="main">
+        <nav>
+            <img class="mainlogo" src="images/logo4.jpeg" alt="wealthwave" style="width:100px;height:100px;">
+
+            <ul>
+                <li><a href="home.html" class="active">HOME</a></li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>                         
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>  
+            </ul>
+           
+        </nav>
+        <div class="container">
+            <div class="container__left">
+              <h1>Read what our customers love about us</h1>
+              <p>
+                At WealthWave, our commitment goes beyond providing financial tools – it's about empowering you to shape your financial future with confidence and ease. We take pride in the positive impact we've had on the lives of our users. Let's explore what our customers love about their WealthWave experience.
+              </p>
+              <button>Read our success stories</button>
+            </div>
+            <div class="container__right">
+              <div class="card">
+                <img src="images/person1 (1).jpg" alt="user" />
+                <div class="card__content">
+                  <span><i class="ri-double-quotes-l"></i></span>
+                  <div class="card__details">
+                    <p>
+                    Collaborating with WealthWave was like embarking on a financial journey with expert guides by my side. From setting personalized financial goals to understanding intricate investment strategies, WealthWave guided me with precision and care. 
+                    </p>
+                    <h4>- Marnus Stephen</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/person4.jpg" alt="user" />
+                <div class="card__content">
+                  <span><i class="ri-double-quotes-l"></i></span>
+                  <div class="card__details">
+                    <p>
+                        The genuine enthusiasm of the WealthWave team makes the journey towards financial success not only productive but also thoroughly enjoyable. Without a doubt, I consider them the complete experts at what they do!
+                    </p>
+                    <h4>- Andrew Jettpace</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/person1 (2).jpg" alt="user" />
+                <div class="card__content">
+                  <span><i class="ri-double-quotes-l"></i></span>
+                  <div class="card__details">
+                    <p>
+                        I absolutely loved my experience with WealthWave! The entire team resonates with a passion for financial wellness that creates a harmonious symphony of support. Their commitment to delivering exceptional service is evident in every interaction
+                    </p>
+                    <h4>- Stacy Stone</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            const navHeight = nav.offsetHeight;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > navHeight) {
+                nav.classList.add('scrolled', 'nav-background');
+            } else {
+                nav.classList.remove('scrolled', 'nav-background');
+            }
+          });
+          </script>
+        </body>
+      
+        </html>

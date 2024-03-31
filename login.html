@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/login.css">
+   <link rel="stylesheet" href="css/ExternalStyleSheet.css">
+   
+   <!-- custom js file link  -->
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+</script> 
+
+
+
+</head>
+<body>
+    <nav>
+        <img class="mainlogo" src="images/logo4.jpeg" alt="WealthWave" style="width:100px;height:100px;">
+    
+        <ul>
+            <li><a href="home.html" class="active">HOME</a></li>
+            
+        </ul>
+       
+    
+    </nav>
+    
+  
+   <section>
+    
+    <form id="loginForm">
+        <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" id="emailInput" required>
+            <label for="emailInput">Email</label>
+        </div>
+        <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="passwordInput" required>
+            <label for="passwordInput">Password</label>
+        </div>
+        <div class="forget">
+            <label for="rememberMe"><input type="checkbox" id="rememberMe">Remember Me</label>
+            <a href="#">Forget Password</a>
+        </div>
+        <button type="button" onclick="login()">Log in</button>
+        <div class="register">
+            <p>Don't have an account <a href="#">Register</a></p>
+        </div>
+    </form>
+    </section>
+
+    <script>
+        function login() {
+            
+            const email = document.getElementById('emailInput').value;
+            const password = document.getElementById('passwordInput').value;
+        
+            
+            if (email === 'binura@email.com' && password === 'binura') {
+                
+                window.location.href = "dashboard.html";
+            } else {
+                
+                alert('Invalid email or password. Please try again.');
+            }
+        }
+        </script>
+    
+
+</body>
+        
+        
+</html>
+
+
+
+
+
+ 
